@@ -938,7 +938,7 @@ func (s *ListVpcPeerConnectionsResponseBody) SetVpcPeerConnects(v []*ListVpcPeer
 }
 
 type ListVpcPeerConnectionsResponseBodyVpcPeerConnects struct {
-	AcceptingOwnerUid *int32                                                         `json:"AcceptingOwnerUid,omitempty" xml:"AcceptingOwnerUid,omitempty"`
+	AcceptingOwnerUid *int64                                                         `json:"AcceptingOwnerUid,omitempty" xml:"AcceptingOwnerUid,omitempty"`
 	AcceptingRegionId *string                                                        `json:"AcceptingRegionId,omitempty" xml:"AcceptingRegionId,omitempty"`
 	AcceptingVpc      *ListVpcPeerConnectionsResponseBodyVpcPeerConnectsAcceptingVpc `json:"AcceptingVpc,omitempty" xml:"AcceptingVpc,omitempty" type:"Struct"`
 	Bandwidth         *int32                                                         `json:"Bandwidth,omitempty" xml:"Bandwidth,omitempty"`
@@ -949,7 +949,7 @@ type ListVpcPeerConnectionsResponseBodyVpcPeerConnects struct {
 	GmtModified       *string                                                        `json:"GmtModified,omitempty" xml:"GmtModified,omitempty"`
 	InstanceId        *string                                                        `json:"InstanceId,omitempty" xml:"InstanceId,omitempty"`
 	Name              *string                                                        `json:"Name,omitempty" xml:"Name,omitempty"`
-	OwnerId           *int32                                                         `json:"OwnerId,omitempty" xml:"OwnerId,omitempty"`
+	OwnerId           *int64                                                         `json:"OwnerId,omitempty" xml:"OwnerId,omitempty"`
 	RegionId          *string                                                        `json:"RegionId,omitempty" xml:"RegionId,omitempty"`
 	ResourceGroupId   *string                                                        `json:"ResourceGroupId,omitempty" xml:"ResourceGroupId,omitempty"`
 	Status            *string                                                        `json:"Status,omitempty" xml:"Status,omitempty"`
@@ -965,7 +965,7 @@ func (s ListVpcPeerConnectionsResponseBodyVpcPeerConnects) GoString() string {
 	return s.String()
 }
 
-func (s *ListVpcPeerConnectionsResponseBodyVpcPeerConnects) SetAcceptingOwnerUid(v int32) *ListVpcPeerConnectionsResponseBodyVpcPeerConnects {
+func (s *ListVpcPeerConnectionsResponseBodyVpcPeerConnects) SetAcceptingOwnerUid(v int64) *ListVpcPeerConnectionsResponseBodyVpcPeerConnects {
 	s.AcceptingOwnerUid = &v
 	return s
 }
@@ -1020,7 +1020,7 @@ func (s *ListVpcPeerConnectionsResponseBodyVpcPeerConnects) SetName(v string) *L
 	return s
 }
 
-func (s *ListVpcPeerConnectionsResponseBodyVpcPeerConnects) SetOwnerId(v int32) *ListVpcPeerConnectionsResponseBodyVpcPeerConnects {
+func (s *ListVpcPeerConnectionsResponseBodyVpcPeerConnects) SetOwnerId(v int64) *ListVpcPeerConnectionsResponseBodyVpcPeerConnects {
 	s.OwnerId = &v
 	return s
 }
